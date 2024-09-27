@@ -71,11 +71,32 @@ public class AC1 {
 			System.out.println("La distancia en metros  de " + millas + "millas, son " + metros + "metros" );
 			
 		//Ejercicio 8
+		double num3;
+		double num4;
 		Scanner teclado5 = new Scanner (System.in);
-		double numero3; //pppppp
+			System.out.println("Escribe un número:");
+		num3 = teclado5.nextDouble();
+			System.out.println("Ahora escribe otro diferente:");
+		num4 = teclado5.nextDouble();
+		double NumMax;
+		double NumMin;
+		NumMax = Math.max(num3, num4);
+		NumMin = Math.min(num3, num4);
+		System.out.println(NumMax + " , " + NumMin);
 		
-		
-		
+		//Ejercicio 9
+		double num5;
+		double num6;
+		Scanner teclado6 = new Scanner (System.in);
+			System.out.println("Escribe un número:");
+		num5 = teclado6.nextDouble();
+			System.out.println("Escribe un número:");
+		num6 = teclado6.nextDouble();
+		double NumMax1 = Math.max(num5, num6);
+		boolean MismoNum = num5==num6;
+			System.out.println(NumMax1);
+			System.out.println(MismoNum);
+			
+		//Ejercicio 10 
 	}
-
 }
