@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 package AC1;
 
 import java.util.Scanner;
