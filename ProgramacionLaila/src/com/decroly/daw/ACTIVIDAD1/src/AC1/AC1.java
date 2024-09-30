@@ -94,9 +94,53 @@ public class AC1 {
 		num6 = teclado6.nextDouble();
 		double NumMax1 = Math.max(num5, num6);
 		boolean MismoNum = num5==num6;
-			System.out.println(NumMax1);
-			System.out.println(MismoNum);
+			System.out.println("El numero mayor es " + NumMax1);
+			System.out.println("El resultado de si los numeros son iguales o no es, " + MismoNum);
 			
 		//Ejercicio 10 
+		double num7, num8, num9;
+		Scanner teclado7 = new Scanner (System.in);
+			System.out.println("Escribe 3 numeros diferentes: ");
+		num7 = teclado7.nextDouble();
+		num8 = teclado7.nextDouble();
+		num9 = teclado7.nextDouble();
+		double NumMax2 = Math.max(num9,(Math.max(num7, num8)));
+			System.out.println("El numero mas grande es " + NumMax2);
+			
+		//Ejercicio 11
+		Scanner teclado8 = new Scanner (System.in);
+			System.out.println("Introduzca un número: ");
+		double num10 = teclado8.nextDouble();
+			System.out.println("Introduzca otro número: ");
+		double num11 = teclado8.nextDouble();
+		double suma1 = num10 + num11;
+		double resta1 = num10 - num11;
+		double producto1 = num10 * num11;
+		double division1= num10 / num11;
+			System.out.println("El resultado de " + num10 + "+" + num11 + " es " + suma);
+			System.out.println("El resultado de " + num10 + "-" + num11 + " es " + resta);	
+			System.out.println("El resultado de " + num10 + "*" + num11 + " es " + producto);
+			System.out.println("El resultado de " + num10 + "/" + num11 + " es " + division);
+			
+		//Ejercicio 12
+		double num12;
+		double num13;
+		Scanner teclado9 = new Scanner (System.in);
+			System.out.println("Escribe un número:");
+		num12 = teclado9.nextDouble();
+			System.out.println("Ahora escribe otro diferente:");
+		num13 = teclado9.nextDouble();
+		double NumMax3;
+		NumMax3 = Math.max(num3, num4);
+			System.out.println("El numero mayor es " + NumMax3);
+			
+		//Ejercicio 13
+		double num14;
+		Scanner teclado10 = new Scanner (System.in);
+			System.out.println("Escribe un número positivo o negativo: ");
+		num14 = teclado10.nextDouble();
+		double valor = Math.signum(num14);
+			System.out.println("El valor de este numero es " + valor);
+			
 	}
 }
