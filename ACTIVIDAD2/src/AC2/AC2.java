@@ -24,14 +24,29 @@ public class AC2 {
 			System.out.println("Eres mayor de edad.");
 		} else {
 			System.out.println("Eres menor de edad.");
-					}
+		}
 		
 		//Ejercicio 3
-		int num = 20;
+		System.out.println("A continuación se mostrara una lista de todos los numeros entre el 1 y el 20: ");
 		for (int i = 1; i <= 20 ; i++) {
 			System.out.println(i);
 		}
 		
-			}
+		//Ejercicio 4
+		System.out.println("A continuación se mostrara una lista de todos los numeros pares hasta el 200: ");
+		for (int i = 2; i <= 200; i += 2) {
+			System.out.println(i);
+		
+		}
+		
+		//Ejercicio 5
+		System.out.println("Otravez se mostrara una lista de todos los numeros pares hasta el 200: ");
+		for (int i = 2; i <= 200; i++) {
+		if (i % 2 == 0);
+			System.out.println(" " + i);
+		}
+		
+		
 	}
+}
 
