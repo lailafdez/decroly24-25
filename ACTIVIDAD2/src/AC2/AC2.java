@@ -25,8 +25,12 @@ public class AC2 {
 		} else {
 			System.out.println("Eres menor de edad.");
 					}
-		//Ejercicio 3
 		
+		//Ejercicio 3
+		int num = 20;
+		for (int i = 1; i <= 20 ; i++) {
+			System.out.println(i);
+		}
 		
 			}
 	}
