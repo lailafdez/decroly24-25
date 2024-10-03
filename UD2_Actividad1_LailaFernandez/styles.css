@@ -1,0 +1,55 @@
+    body {
+        font-family: Monaco;
+        color:#000000;
+        font-size: 35px;
+        background-image: url(https://www.teknofilo.com/wp-content/uploads/2015/03/keyguard_default_wallpaper.jpg);
+    }
+    h1 {
+        text-align: center;
+        font-size: 60px;
+        color:#970606;
+    }
+    .producto {
+        border: 5px solid #88a8ff;
+        padding: 50px;
+        margin: 150px;
+        background-color: #f3bbbb;
+    }
+    .producto img {
+        border: 2px solid #000000;
+        max-width: 50%;
+        height: auto;
+    }
+    .producto1 {
+        border: 5px solid #88a8ff;
+        padding: 50px;
+        margin: 150px;
+        background-color: #f3bbbb;
+    }
+    .producto1 img {
+        border: 2px solid #000000;
+        max-width: 50%;
+        height: auto;
+    }
+    .producto2 {
+        border: 5px solid #88a8ff;
+        padding: 50px;
+        margin: 150px;
+        background-color: #f3bbbb;
+    }
+    .producto2 img {
+        border: 2px solid #000000;
+        max-width: 50%;
+        height: auto;
+    }
+    .producto3 {
+        border: 5px solid #88a8ff;
+        padding: 50px;
+        margin: 150px;
+        background-color: #f3bbbb   ;
+    }
+    .producto3 img {
+        border: 2px solid #000000;
+        max-width: 50%;
+        height: auto;
+    }
