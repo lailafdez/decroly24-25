@@ -83,21 +83,62 @@ public class AC2 {
 		int horas;
 		int minutos; 
 		int segundos;
+			System.out.println("Escribe la hora entre 00h y 23h");
 		Scanner teclado5 = new Scanner (System.in);
 		horas = teclado5.nextInt();
-			System.out.println("Escribe la hora entre 00h y 23h");
+			System.out.println("Escribe los minutos entre 00min y 59min");
 		Scanner teclado6 = new Scanner (System.in);
 		minutos = teclado6.nextInt();
-				System.out.println("Escribe los minutos entre 00min y 59min");
+			System.out.println("Escribe los segundos entre 00seg y 59seg");
 		Scanner teclado7 = new Scanner (System.in);
 		segundos = teclado7.nextInt();
-				System.out.println("Escribe los segundos entre 00seg y 59seg");
+		
 		if (horas >= 0 && horas < 24 && minutos >= 0 && minutos < 60 && segundos >= 0 && segundos < 60) {
 			segundos ++;
-			
+		if (segundos == 60) {
+			segundos = 00;
+			minutos ++;
 		}
+		if (minutos == 60) {
+			minutos = 00;
+			horas ++;
+		}
+		if (horas == 24) {
+			horas = 00;
+		}
+			System.out.println("La hora despues de un segundo es " + horas + ":" + minutos + ":" + segundos );
+		//Ejercicio 10
+		int positivo = 0;
+		int negativo = 0;
+		double num1;
+			for (int i = 0; i < 10; i++) {
+			Scanner teclado8 = new Scanner (System.in);
+				while (true) {
+					System.out.println("Escribe un numero no nulo:");
+				num1 = teclado8.nextDouble();
+				
+					if (num1 == 0) {
+							System.out.println("El numero no puede ser nulo.");
+							} 
+							else {
+								break;
+							}
+			
+						}
+			if (num1 > 0) {
+			positivo++;
+			}
+			else {
+			negativo++;
+			}
+				
+			System.out.println("Los numeros positivos son: " + positivo);
+			System.out.println("Los numeros negativos son: " + negativo);
+			
+			
 			
 		}//MAIN
-	
+	}
+	}
 }//CLASE
 
