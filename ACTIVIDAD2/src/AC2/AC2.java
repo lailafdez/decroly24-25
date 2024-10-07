@@ -78,6 +78,23 @@ public class AC2 {
 				    		}
 		
 		//Ejercicio 8 
+		int num3;
+		int factorial = 1;
+		Scanner teclado10= new Scanner (System.in);
+		System.out.println("Escrribe un numero natural: ");
+		num3 = teclado10.nextInt();
+		
+		while (num3 < 0) {
+			System.out.println("El numero no puede ser negativo.");
+			System.out.println("Escribe un numero natural:");
+			num3 = teclado10.nextInt();
+			}
+		if (num >= 0) {
+			for (int i = 1; i <= num; i++) {
+				factorial = factorial * i;
+			}
+			System.out.println("El factorial es " + factorial);
+		}
 		
 		//Ejercicio 9
 		int horas;
@@ -95,6 +112,7 @@ public class AC2 {
 		
 		if (horas >= 0 && horas < 24 && minutos >= 0 && minutos < 60 && segundos >= 0 && segundos < 60) {
 			segundos ++;
+		}
 		if (segundos == 60) {
 			segundos = 00;
 			minutos ++;
@@ -107,38 +125,135 @@ public class AC2 {
 			horas = 00;
 		}
 			System.out.println("La hora despues de un segundo es " + horas + ":" + minutos + ":" + segundos );
+		
 		//Ejercicio 10
-		int positivo = 0;
-		int negativo = 0;
-		double num1;
-			for (int i = 0; i < 10; i++) {
+		boolean negativo1 = false;
+		double num2 = 0;
+			for (int i = 0; i < 10; i ++) {
 			Scanner teclado8 = new Scanner (System.in);
-				while (true) {
+			System.out.println("Escribe un numero no nulo: ");
+			num2 = teclado8.nextDouble();
+				while (num2 == 0) {
+					System.out.println("El numero no puede ser nulo.");
 					System.out.println("Escribe un numero no nulo:");
-				num1 = teclado8.nextDouble();
-				
-					if (num1 == 0) {
-							System.out.println("El numero no puede ser nulo.");
-							} 
-							else {
-								break;
-							}
+						num2 = teclado8.nextDouble();
+					}
+					if (num2 < 0) {
+						negativo1 = true;
+					}
+				}
 			
-						}
-			if (num1 > 0) {
-			positivo++;
-			}
+			if (negativo1 == true) {
+				System.out.println("Se han encontrado almenos 1 numero negativo.");
+			} 
 			else {
-			negativo++;
+				System.out.println("No se ha encontrado ningun numero negativo.");
 			}
+	
+		//Ejercicio 11
+			int positivo = 0;
+			int negativo = 0;
+			double num1;
+				for (int i = 0; i < 10; i++) {
+				Scanner teclado9 = new Scanner (System.in);
+				System.out.println("Escribe un numero no nulo:");
+				num1 = teclado9.nextDouble();
 				
+				
+				while (num1 == 0) {
+					System.out.println("El numero no puede ser nulo.");
+					System.out.println("Escribe un numero no nulo:");
+					num1 = teclado9.nextDouble();
+				}
+	
+				if (num1 > 0) {
+				positivo++;
+				}
+				else {
+				negativo++;
+				}
+					
+
+			}
+			
 			System.out.println("Los numeros positivos son: " + positivo);
 			System.out.println("Los numeros negativos son: " + negativo);
+				
+				//ej 11
+				
+		//Ejercicio 12
+			int positivo2 = 0;
+			int negativo2 = 0;
+			double num4 = 0;
+			boolean negativos3 = false;
+			Scanner teclado11 = new Scanner (System.in);
+			System.out.println("Escribe una serie de numeros y que el último sea 0");
+			do {
+			num4 = teclado10.nextDouble();
+		
+			if (num4 < 0) {
+				negativos3 = true;
+				negativo2++;
+			} 
+			else {
+				positivo2++;
+			}
+			}
+			while(num4 != 0); 
 			
-			
-			
+		System.out.println("Se han encontrado " + negativo2 + " numeros negativos");
+		System.out.println("Se han encontrado " + positivo2 + " numeros positivos");
+		
+		//Ejercicio 13
+		int suma = 0;
+		int multiplicacion = 1;
+		for (int i = 1; i < 10; i++) {
+			suma = i + suma;
+			multiplicacion = i * multiplicacion;
+		}
+		System.out.println("La suma de los 10 primeros numeros naturales es " + suma);
+		System.out.println("El producto de los 10 primeros numeros naturales es " + multiplicacion);
+		
+		//Ejercicio 14
+		String nombre;
+		double horas1;
+		double salariobruto;
+		double salarioneto;
+		double impuestos;
+		double salario = 20;
+		Scanner teclado12 = new Scanner (System.in);
+		System.out.println("Escribe aqui tu nombre: ");
+		nombre = teclado12.nextLine();
+		
+		Scanner teclado13 = new Scanner (System.in);
+		System.out.println("Escribe aqui tus horas trabajadas: ");
+		horas1 = teclado13.nextDouble();
+		
+		if (horas1 <= 35) {
+			salariobruto = horas1 * salario;
+		}
+		else {
+			double horas2 = horas1 - 35;
+			salariobruto = (35 * salario) + (horas2 * salario * 1.5);
+		}
+		if (salariobruto <= 500) {
+			impuestos = 0;
+			salarioneto = salariobruto;
+		}
+		else if (salariobruto <= 900) {
+			impuestos = (salariobruto - 500) * 0.25;
+			salarioneto = salariobruto - impuestos;
+		}
+		else {
+			impuestos = (900 - 500) * 0.25;
+			impuestos += ( salariobruto - 900) * 0.45;
+			salarioneto = salariobruto - impuestos;
+		}
+		
+		System.out.println("Nombre: " + nombre);
+		System.out.println("Salario Bruto: "  + salariobruto);
+		System.out.println("Salario Neto: "  + salarioneto);
+		System.out.println("Impuestos: "  + impuestos);				
 		}//MAIN
-	}
-	}
 }//CLASE
 
