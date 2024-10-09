@@ -179,8 +179,6 @@ public class AC2 {
 			System.out.println("Los numeros positivos son: " + positivo);
 			System.out.println("Los numeros negativos son: " + negativo);
 				
-				//ej 11
-				
 		//Ejercicio 12
 			int positivo2 = 0;
 			int negativo2 = 0;

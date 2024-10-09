@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> 4c1166de70371392e4307479a7c0aeacf176f200
 package AC1;
 
 import java.util.Scanner;
