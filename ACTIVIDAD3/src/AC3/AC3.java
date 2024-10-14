@@ -101,16 +101,12 @@ public class AC3 {
 				num1 = reader.nextDouble();
 				System.out.println("Escriba otro numero: ");
 				num2 = reader.nextDouble();
-				if (){
+				System.out.println("El resultado de tu division es " + (num1 / num2));
 			}
-		}while( opcion == 5);
+			
+		} while( opcion != 5 ) ;
 		
-		
-		
-		
-		
-		
-	}
-}
 	
+		}
+}
 	
