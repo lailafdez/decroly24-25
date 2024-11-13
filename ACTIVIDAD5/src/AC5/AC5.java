@@ -109,24 +109,30 @@ public class AC5 {
                 System.out.println("Nº de U: " + vocalU);
                 
          //Ejercicio5
-    
-                        Scanner scanner4 = new Scanner(System.in);
-                        
-                        System.out.print("Escribe una frase solo con letras y espacios  (ni comas, ni puntos, "
-                        		+ "ni acentos, etc.): ");
-                        String frase1 = scanner.nextLine();
-                       
-            
+                Scanner scanner4 = new Scanner(System.in);
+                System.out.print("Escribe una frase: ");
+                String frase1 = scanner4.nextLine();
+                
+                String frase2 = frase1.replaceAll(" ", " ").toLowerCase();
+                
+                boolean palindromo = true;
+                int longitud = frase2.length();
+                
+                for (int i = 0; i < longitud; i++) {
+                	if (frase2.charAt(i) != frase2.charAt(longitud - 1 - i)) {
+                	palindromo = false;
+                	}
+                }
+                if (palindromo) {
+                	System.out.println("Esta frase es un palindromo. ");
+                }
+                else {
+                	System.out.println("Esta frase no es un palindromo. ");
+                }
 
-                        
-                    
+                //Escaner
 
-		               
-		          
-
-		        
-
-
+                scanner4.close();
                 scanner3.close();
 		        scanner1.close();
 		        scanner.close();

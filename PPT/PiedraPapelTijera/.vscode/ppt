@@ -1,0 +1,77 @@
+import java.util.Scanner;
+
+public class PiedraPapelTijera {
+
+     String PIEDRA = "P";
+     String PAPEL = "A";
+     String TIJERA = "T";
+     String SALIR = "S";
+    void instrucciones (){
+        System.out.println("Bienvenido a piedra, papel o tijera");
+        System.out.println("Como se juega: ");
+        System.out.println("Piedra - P");
+        System.out.println("Papel - A");
+        System.out.println("Tijera - T");
+        System.out.println("CSalir del juego - S ");
+    }
+
+    String ganador;
+    String usuario;
+    String ordenador;
+
+    if (usuario.equals (ordenador)) {
+        return "Empataste";
+    }
+    else if ((usuario.equals) (piedra) && ordenador.equals (tijera))
+    ((usuario.equals) (papel) && ordenador.equals (piedra))
+    ((usuario.equals) (tijera) && ordenador.equals (piedra))
+        if (Usuario.equals(Ordenador)) {
+            return "Empate";
+        } else if ((Usuario.equals(Piedra) && Ordenador.equals(Tijera)) 
+                   (Usuario.equals(Papel) && Ordenador.equals(Piedra)) 
+                   (Usuario.equals(Tijera) && Ordenador.equals(Papel))) {
+            return "Ganaste";
+        } else {
+            return "Perdiste";
+        }
+    }
+
+    void jugar() {
+        Instrucciones();
+        Scanner scanner = new Scanner(System.in);
+        Random random = new Random();
+
+        while (true) {
+           //jugada aleatoria
+            String[] Jugada = {PIEDRA, PAPEL, TIJERA};
+            String Ordenador = Jugada[random.nextInt(Jugada.length)];
+
+            // Pedir la jugada del jugador
+            System.out.print("¿Cuál es tu jugada? (P/L/T/S): ");
+            String Usuario = scanner.nextLine().toUpperCase();
+
+            // Salir del juego
+            if (jugadaUsuario.equals(SALIR)) {
+                System.out.println("¡Gracias por jugar!");
+                break;
+            }
+
+            // Interpretar la jugada del usuario
+            if (!jugadaUsuario.equals(PIEDRA) && !jugadaUsuario.equals(PAPEL) && !jugadaUsuario.equals(TIJERA)) {
+                System.out.println("Jugada no válida. Por favor, intenta de nuevo.");
+                continue;
+            }
+
+            // Mostrar las jugadas
+            System.out.println("Tu jugada: " + jugadaUsuario);
+            System.out.println("Jugada del ordenador: " + jugadaOrdenador);
+
+            // Mostrar el resultado
+            String resultado = determinarGanador(jugadaUsuario, jugadaOrdenador);
+            System.out.println(resultado);
+            System.out.println();
+        }
+
+        scanner.close();
+    }
+}
