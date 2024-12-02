@@ -1,0 +1,63 @@
+package Ex1;
+
+import java.util.Scanner;
+
+public class Ex1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner reader = new Scanner(System.in);
+		//Cantidad total de números a almacenar
+		   System.out.println("Escribe el tamaño del array: ");
+		   Scanner reader7 = new Scanner(System.in);
+		   int P = reader7.nextInt();
+		   System.out.println("Escribe numero por el que quieres que empiece el array: ");
+		   Scanner reader8 = new Scanner(System.in);
+		   int Q = reader8.nextInt();
+		   int array;
+		   if (P <= Q) {
+			   array = Q - P + 1;
+		   }
+		   else {
+			   array = P - Q + 1;
+		   }
+		   int [] num6 = new int [array];
+		   for ( int i = 0; i < array; i++) {
+			   if ( P <= Q ) {
+				   num6[i] = P + i;
+			   }
+			   if ( Q <= P ) {
+				   num6[i] = Q + i;
+			   }
+		   }
+		   for (int value : num6) {
+			   System.out.println(value + " ");
+		   }
+		char opcion;
+		do {
+
+		System.out.println("Seleccione una opción: ");
+		System.out.println("a. Insertar numero ");
+		System.out.println("b. Borrar número ");
+		System.out.println("c. Modificar numero ");
+		System.out.println("d. Estadisticas de la coleeción ");
+		System.out.println("e. Ampliar la coleccion ");
+		System.out.println("f. Salir ");
+		opcion = reader.next().charAt(0);
+		
+		//Modificar coleccion 
+			//Insertar num
+		if (opcion == 'a') {
+			
+		
+		}
+		if (opcion == 'd') {
+
+		}
+		}while (opcion != 'd');
+		
+		
+	}
+
+}

@@ -13,7 +13,7 @@ public class CuentaBancaria {
         this.iban = iban1;
         this.titular = titular1;
         this.saldo = 0;
-        this.movimientos = new Movimiento[100];
+        this.movimientos = new Movimiento [100];
         this.nMovientos = 0;
     }
 
@@ -103,6 +103,7 @@ public class CuentaBancaria {
     }
     
     public String informacionMovimiento (){
+        
         String infoMovimientos = "";
         for(int i = 0; i < nMovientos; i++){
             infoMovimientos += movimientos [i].infoMovimiento();

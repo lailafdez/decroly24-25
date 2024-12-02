@@ -1,0 +1,8 @@
+INDEX VERSION 1.134+C:\Users\daw1.COMPU-S021\Documents\decroly24-25\.metadata\.plugins\org.eclipse.jdt.core
+260465803.index
+1865797976.index
+2802309032.index
+1315205789.index
+1041139218.index
+962806283.index
+2691306417.index

@@ -1,0 +1,60 @@
+
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9ff;
+}
+.circulo {
+    width: 200px;     
+    height: 200px;     
+    background-color: #ededed; 
+    border-radius: 50%;
+    margin: 1%;
+}
+img {
+    width: 10vh;     
+    margin: 5vh; 
+    margin-top: 0% ;
+    filter: invert(13%) sepia(85%) saturate(7500%) hue-rotate(358deg) brightness(115%) contrast(120%);   
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 30px;
+}
+main {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+}
+footer {
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+header {
+    padding: 20px 0;
+    text-align: center;
+}
+.circulos {
+    height: 5vh;
+    width: 5vh;
+    background-color: rgb(243, 133, 133);
+    border-radius: 50%;
+}
+.numero {
+    margin: 0;
+    height: 5vh;
+    width: 5vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 2vh;
+    color: #ededed;
+}

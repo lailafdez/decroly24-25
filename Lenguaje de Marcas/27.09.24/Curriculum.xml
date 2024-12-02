@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Curriculum>
+    <Nombre> Laila Fernandez Santamaria <Nombre/>
+    <Mas> Tecnica Informatica <Mas/>
+    <Observaciones> DESCRIPCION
+        Soy estudiante de Informatica apasionado por la tecnologia y la innovacion
+        Me destaco por mi capacidad para resolver problemas de manera creativa y eficiente 
+        Tengo experiencia en aplicaciones ofimaticas y webs lo que me permite hacer proyectos desafiantes con mucho gusto
+        Ademas disfruto trabajar en equipo y aprender de mis compañeros lo que aumenta mi formacion profesional
+        Estoy comprometido con el aprendizaje continuo y siempre busco nuevas oportunidades para crecer en el campo de la informática
+    <Observaciones/>
+    <AP1> Datos Personales 
+        <Telefono> 620 42 80 62 tlf<Telefono/>
+        <Correo> lailafdezs135gmailcom <Correo/>
+        <Localaidad> Liendo <Localaidad/>
+        <Nacimiento> 12 sept 2005 <Nacimiento/>
+    <AP1/>
+    <AP2> Formacion academica
+        <Estudios1> 2018 a 2022
+        Graduada en la ESO
+        IES Fuente Fresnedo
+        Laredo, CANTABRIA
+        <Estudios1/>
+        <Estudios2> 2022 a 2024
+        CFGM Tecnica en Sistemas Microinformaticos y Redes
+        IES Ataulfo Argenta
+        Castro Urdiales CANTABRIA
+        <Estudios2/>
+        <Estudios3> Actualidad
+        CFGS Desarrollo de Aplicaciones Web
+        Centro de Formacion Profesional Decroly
+        Santander CANTABRIA
+        <Estudios3/>
+    <AP2/>
+    <AP3>
+        <Extra> 2021 a 2022
+        Curso de Prevencion de riesgos laborales
+        Nivel basico
+        IES Ataulfo Argenta
+        Castro Urdiales CANTABRIA
+        <Extra/>
+    <AP3/> 
+    <AP4> Herramientas
+        <Herra1> Microsoft Oficce <Herra1/> 
+        <Herra2> Sistemas operativos <Herra2/> 
+        <Herra3> Redes sociales <Herra3/> 
+        <Herra4> Edicion de videos <Herra4/> 
+        <Herra5> Montaje y mantenimiento de equipos <Herra5/> 
+    <AP4/>
+    <AP5> Idiomas
+        <Id1> Espanol <Id1/>
+        <Id2> Ingles <Id2/>
+    <AP5/>
+    <AP6> Experiencia
+        <Ex1> 2024
+        Tecnica informatica de practicas
+        Ayuntamiento de Colindres CANTABRIA
+        410h
+        <Ex1/>
+    <AP6/>
+    <AP7> Habilidades
+        <Hab1> Trabajo en equipo <Hab1/>
+        <Hab2> Proactiva <Hab2/>
+        <Hab3> Capacidad de aprendizaje <Hab3/>
+        <Hab4> Compromiso y organizada <Hab4/>
+        <Hab5> Enfoque hacia el cliente <Hab5/>
+    <AP7/>
+<Curriculum/>

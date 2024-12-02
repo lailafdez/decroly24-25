@@ -1,0 +1,48 @@
+package AC6;
+
+public class AC6 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//Ejercicio1
+
+		        int[][] matriz = new int[5][5];
+		        int numero = 1;
+
+		        for (int i = 0; i < 5; i++) {
+		            for (int j = 0; j < 5; j++) {
+		                matriz[i][j] = numero;
+		                numero++;
+		            }
+		        }
+
+		        for (int i = 0; i < 5; i++) {
+		            for (int j = 0; j < 5; j++) {
+		                System.out.print(matriz[i][j] + "\t");
+		            }
+		            System.out.println();
+		        }
+
+		        
+		//Ejercicio2 
+		                int[][] matriz1 = new int[10][10];
+
+		                for (int i = 0; i < 10; i++) {
+		                    for (int j = 0; j < 10; j++) {
+		                        matriz1[i][j] = (i + 1) * (j + 1);
+		                    }
+		                }
+
+		                for (int i = 0; i < 10; i++) {
+		                    StringBuilder fila = new StringBuilder();
+		                    for (int j = 0; j < 10; j++) {
+		                        fila.append(matriz1[i][j]).append("\t"); 
+		                    }
+		                    System.out.println(fila); 
+		                }
+
+		        
+
+}
+}

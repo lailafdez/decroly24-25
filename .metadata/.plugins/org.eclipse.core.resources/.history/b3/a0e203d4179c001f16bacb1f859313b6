@@ -1,0 +1,46 @@
+package Ex1;
+
+import java.util.Scanner;
+
+public class Ex1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner reader = new Scanner(System.in);
+		//Cantidad total de números a almacenar
+		int [] num = new int [X];
+		int X = reader.nextInt();
+		char opcion;
+		do {
+		System.out.println("Escribe el numero del tamaño del array: ");
+		
+			
+		System.out.println("Seleccione una opción: ");
+		System.out.println("a. Insertar numero ");
+		System.out.println("b. Borrar número ");
+		System.out.println("c. Modificar numero ");
+		System.out.println("d. Estadisticas de la coleeción ");
+		System.out.println("e. Ampliar la coleccion ");
+		System.out.println("f. Salir ");
+		opcion = reader.next().charAt(X);
+		
+		//Modificar coleccion 
+			//Insertar num
+		for (int i = 0; i < num.length; i++) {
+			System.out.println(num[i]);
+		if (opcion == 'a') {
+               System.out.print("Escribe un numero (entero): ");
+               int valor = reader.nextInt();
+               System.out.print("Introduzca una posición: ");
+               int posicion = reader.nextInt();
+		}
+			
+		
+		}
+		}while (opcion != 'd');
+		
+		
+	}
+
+}

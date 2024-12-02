@@ -1,0 +1,176 @@
+.container {
+  display: grid;
+  font-family: "Verdana";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Nombre Nombre1 Nombre2 Nombre3"
+    "Prod1 Cantidad1 Precio1 Total1"
+    "Prod2 Cantidad2 Precio2 Total2"
+    "Prod3 Cantida3 Precio3 Total3";
+}
+
+.Nombre {
+  grid-area: Nombre;
+  margin-top: 30%;
+  border-bottom: 1px solid grey;
+}
+
+.Nombre1 {
+  grid-area: Nombre1;
+  margin-top: 30%;
+  border-bottom: 1px solid grey;
+}
+
+.Nombre2 {
+  grid-area: Nombre2;
+  margin-top: 30%;
+  border-bottom: 1px solid grey;
+}
+
+.Nombre3 {
+  grid-area: Nombre3;
+  margin-top: 30%;
+  border-bottom: 1px solid grey;
+}
+
+.Prod1 {
+  grid-area: Prod1;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 10%;
+}
+
+.Prod2 {
+  grid-area: Prod2;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 10%;
+}
+
+.Prod3 {
+  grid-area: Prod3;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 10%;
+}
+
+.Cantidad1 {
+  grid-area: Cantidad1;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-top: 15%;
+  border-bottom: 1px solid lightgray;
+}
+
+.Cantidad2 {
+  grid-area: Cantidad2;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-top: 15%;
+  border-bottom: 1px solid lightgray;
+}
+
+.Cantidad3 {
+  grid-area: Cantida3;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  border-bottom: 1px solid lightgray;
+}
+
+.Precio1 {
+  grid-area: Precio1;
+  margin-top: 15%;
+  border-bottom: 1px solid lightgray;
+}
+
+.Precio2 {
+  grid-area: Precio2;
+  margin-top: 15%;
+  border-bottom: 1px solid lightgray;
+}
+
+.Precio3 {
+  grid-area: Precio3;
+  margin-top: 15%;
+  border-bottom: 1px solid lightgray;
+}
+
+.Total1 {
+  grid-area: Total1;
+  margin-top: 15%;
+  border-bottom: 1px solid lightgray;
+}
+
+.Total2 {
+  grid-area: Total2;
+  margin-top: 15%;
+  border-bottom: 1px solid lightgray;
+}
+
+.Total3 {
+  grid-area: Total3;
+  margin-top: 15%;
+  border-bottom: 1px solid lightgray;
+}
+
+.container2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "TotalTit TotalTit"
+    "TotalPeque TotalPeque1";
+  padding-top: 17%;
+  font-family: "Verdana";
+}
+
+.TotalTit {
+  grid-area: TotalTit;
+  background-color: rgb(248, 248, 248);
+  border-bottom: 1px solid lightgray;
+  padding-left: 5%;
+}
+
+.TotalPeque {
+  grid-area: TotalPeque;
+  background-color: rgb(248, 248, 248);
+  padding-left: 12%;
+  padding-top: 5%;
+}
+
+.TotalPeque1 {
+  grid-area: TotalPeque1;
+  background-color: rgb(248, 248, 248);
+  text-align: right;
+  padding-right: 10%;
+}
+
+h3 {
+  font-family: "Verdana";
+  margin-bottom: 2%;
+  margin-top: 15%;
+}
+
+.containerMain {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 5%;
+  grid-template-areas:
+    "a B";
+}
+
+.a {
+  grid-area: a;
+}
+
+.B {
+  grid-area: B;
+}
+
+body input {
+  max-width: 25px;
+  max-height: 25px;
+}
