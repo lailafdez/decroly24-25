@@ -1,0 +1,35 @@
+header {
+    background-color: aqua;
+    text-align: center;
+    margin-bottom: 0%;
+    padding: 1rem;
+    font-family: Verdana;
+
+}
+li {
+    display: inline;
+}
+a {
+    display: inline;
+    padding: 8px;
+    background-color: aqua;
+}
+
+.inicio {
+    margin-top: 0%;
+}
+
+table, th, td {
+    border: 1px solid black;
+  }
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+.galeria img {
+    width: calc(25% - 1rem);
+    border: 1px solid #ccc;
+}
