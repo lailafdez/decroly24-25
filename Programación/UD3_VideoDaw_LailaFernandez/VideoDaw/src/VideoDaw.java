@@ -97,10 +97,15 @@ public class VideoDaw {
         return mostrarInfoClientesRegistrados;
     }
 
-    public String alquilarPeliculas( Pelicula p, Cliente c){
-        String alquilarPelis ="";
-        return alquilarPelis;
+    public Pelicula peliPorPosicion (int i) {
+        return this.pelis_registradas[i];
+    } 
+
+    public Cliente clientePorPosicion (int i) {
+        return this.clientes_registrados[i];
     }
+
+  
 }
     
 
