@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Satelites extends Astros {
 
     //Atributos
@@ -8,7 +10,6 @@ public class Satelites extends Astros {
 
     //Constructores
     public Satelites (double distancia_planeta, double orbita_planetaria, String planeta_pertenece, double masa_del_cuerpo, double diametro_medio, double tiempo_rotacion, double tiempo_traslacion, double distancia_media) {
-        super(masa_del_cuerpo, diametro_medio, tiempo_rotacion, tiempo_traslacion, distancia_media);
         this.distancia_planeta = distancia_planeta;
         this.orbita_planetaria = orbita_planetaria;
         this.planeta_pertenece = planeta_pertenece;
@@ -17,23 +18,16 @@ public class Satelites extends Astros {
     //Metodos
     @Override
     public String mostrarInfo() {
-        return "Masa del cuerpo =" + masa_del_cuerpo + "diametro medio =" + diametro_medio + "periodo de rotacion sobre su eje =" + tiempo_rotacion + "periodo de traslacion alrededor del cuerpo que orbitan = " + tiempo_traslacion + "distancia media a ese cuerpo = " + distancia_media;  
+        return "Masa del cuerpo =" + masa_del_cuerpo + "diametro medio =" + diametro_medio + "periodo de rotacion sobre su eje =" + tiempo_rotacion + "periodo de traslacion alrededor del cuerpo que orbitan = " + tiempo_traslacion + "distancia media a ese cuerpo = " + distancia_media + "Distancoa al planeta = " + this.distancia_planeta + "Orbita planetaria = " + this.orbita_planetaria + " Planeta al que pertenece = " + this.planeta_pertenece;
     }
-
-    @Override
-    public String infoPyS() {
-        String informacionS = mostrarInfo();
-        informacionS += String.format("Distancia al planeta: %s, Orbita planetaria: %s, Plantea al que pertenece: %s", this.distancia_planeta, this.orbita_planetaria, this.planeta_pertenece);
-        return infoPyS();
-    }
-
+    
     //Getters y Setters
     public double getDistancia_planeta() {
         return distancia_planeta;
     }
 
     public String [] getNsatelites () {
-        return nSatelites();
+        return nSatelites ;
     }
 
     public void setDistancia_planeta(double distancia_planeta) {

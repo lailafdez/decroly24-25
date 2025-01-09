@@ -4,15 +4,8 @@ public abstract class Astros {
         protected double tiempo_rotacion;
         protected double tiempo_traslacion;
         protected double distancia_media;
-    
-        public Astros (double masa_del_cuerpo, double diametro_medio, double tiempo_rotacion, double tiempo_traslacion, double distancia_media) {
-         this.masa_del_cuerpo = masa_del_cuerpo;
-         this.tiempo_traslacion = tiempo_traslacion;
-         this.diametro_medio = diametro_medio;
-         this.tiempo_rotacion = tiempo_rotacion;
-         this.distancia_media = distancia_media;
-        }
-     
+   
+        
         public double getMasa_del_cuerpo() {
            return this.masa_del_cuerpo;
         }
@@ -34,5 +27,4 @@ public abstract class Astros {
         }
      
         public abstract String mostrarInfo();
-        public abstract String infoPyS();
 }

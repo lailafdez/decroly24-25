@@ -4,62 +4,68 @@ public class App {
     public static void main(String[] args) throws Exception {
         
         Astros [] SistemaSolar = new Astros[10];
+        Scanner reader1 = new Scanner(System.in);
+            
+        System.out.println("Medidas necesarias");
+        System.out.println("Masa del cuerpo = ");
+        double masa_del_cuerpo = reader1.nextDouble();
+        System.out.println("Diametro medio = ");
+        double diametro_medio = reader1.nextDouble();
+        System.out.println("Tiempo de rotacion = ");
+        double tiempo_rotacion = reader1.nextDouble();
+        System.out.println("Tiempo de traslacion = ");
+        double tiempo_traslacion = reader1.nextDouble();
+        System.out.println("Distancia media = ");
+        double distancia_media = reader1.nextDouble();
+
+        Astros info = new Astros(masa_del_cuerpo, diametro_medio, tiempo_rotacion, tiempo_traslacion, distancia_media);
+        
         String opcion = "";
-        Scanner reader;
 
     }
     private static void menuOpciones() {
             System.out.println("Escoga la opcion que desee");
-            System.out.println("1. Registrar Astro");
-            System.out.println("2. Registrar Satelite");
-            System.out.println("3. Registrar Planeta");
-            System.out.println("4. Salir");
+            System.out.println("1. Registrar Satelite");
+            System.out.println("2. Registrar Planeta");
+            System.out.println("3. Mostrar Satelites registrados");
+            System.out.println("4. Mostrar Planetas registrados");
+            System.out.println("5. Salir");
     }
-    private static void menuOpciones() {
+    private static void menuOpciones (String opcion) {
+        Scanner reader = new Scanner(System.in);
         switch (opcion) {
             case "1":
-                System.out.println(miCuenta.mostrarInfoCuentaBancaria());
-                break;
+            System.out.println("Distancia al planet: ");
+            double distancia_sol = reader.nextDouble();
+            System.out.println("Orbita planetaria: ");
+            double orbita_planetaria = reader.nextDouble();
+            System.out.println("Planeta al que pertenece: ");
+            String planeta_pertenece = reader.nextLine();
+            System.out.println("Masa del cuerpo: "); 
+            double masa_del_cuerpo = reader.nextDouble();
+            System.out.println("Diametro medio: "); 
+            double diametro_medio = reader.nextDouble();
+            System.out.println("Tiempo de rotacion: ");
+            double tiempo_rotacion = reader.nextDouble(); 
+            System.out.println("Tiempo e traslacion: "); 
+            double tiempo_traslacion = reader.nextDouble();
+            System.out.println("Distancia media: ");
+            double distancia_media = reader.nextDouble();
 
+            System.out.println("Satelite registrado con exito");
+                break;
             case "2":
-                System.out.println(miCuenta.getIban());
-                break;
 
+                break;
             case "3":
-                System.out.println(miCuenta.getTitular());
+            System.out.println( );
                 break;
             case "4":
-                System.out.println(miCuenta.getSaldo());
-                break;
 
-            case "5":
-                double cantidad = MiUtils.leerDoublePantalla("Introduzca la cantidad a ingresar");
-                miCuenta.ingresar(cantidad);
-                if(cantidad > 3000.0){
-                    System.out.println("ALta cantidad: se ejecuta aviso a Hacienda");
-                }
                 break;
-
-            case "6":
-                double cantidadR = MiUtils.leerDoublePantalla("Introduzca la cantidad a retirar");
-                if((miCuenta.getSaldo()-cantidadR) < -50){
-                    System.out.println("“AVISO: Saldo negativo, no se puede realizar la retirada");
-                }
-                else{
-                    miCuenta.retirar(cantidadR);
-                }
-                break;
-
-            case "7":
-                System.out.println(miCuenta.mostrarInfoMovimientos());
-                break;
-            case "8":
-                System.out.println("Se cerrara el programa. Sayonra baby!!!");
-                break;
-
             default:
-                System.out.println("Opcion incorrecta, vuelva a escoger");
-            }
+                System.out.println("Introduzca una opcion correcta del menu");
+                break;
         }
     }
-
+}
