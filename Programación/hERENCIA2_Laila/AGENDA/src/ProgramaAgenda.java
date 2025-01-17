@@ -1,5 +1,61 @@
+import java.util.Scanner;
+
 public class ProgramaAgenda {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
-    }
-}
+        
+        Scanner reader = new Scanner(System.in);
+        String opcion;
+        Agenda agenda = new Agenda(null);
+        do {
+            reader = new Scanner(System.in);
+            System.out.println("Bienvenido a tu agenda de contactos!");
+            System.out.println("Escoge una opcion: ");
+            System.out.println("1. Agregar contacto");
+            System.out.println("2. Eliminar contacto");
+            System.out.println("3. Comprobar que un contacto existe");
+            System.out.println("4. Mostrar toda la agenda");
+            System.out.println("5. Buscar posicion de contacto");
+            System.out.println("6. Salir");
+            opcion = reader.nextLine();
+
+            switch (opcion) {
+                case "1":
+                System.out.println("Escribe el nombre de tu contacto:");
+                String nombre = reader.nextLine();
+                System.out.println("Escribe el numero de telefono de tu contacto:");
+                String telefono = reader.nextLine();
+
+                Contactos c = new Contactos (nombre, telefono);
+                boolean agregarContacto = agenda.agregarContacto(c);
+
+                if (agregarContacto) {
+                    System.out.println("Tu contacto ha sido añadido correctamente");
+                }
+                else {
+                    System.out.println("No se ha podido completar la operacion con exito, intentelo de nuevo");
+                }
+                    
+                    break;
+
+                case "2": 
+                System.out.println("¿A que contacto deseas eliminar?");
+                String eliminarNombre = reader.nextLine();
+
+                if (agenda.eliminarContacto(eliminarNombre) == true) {
+                    System.out.println("Acabas de eliminar a " + eliminarNombre);
+                }
+                else {
+                    System.out.println(eliminarNombre + "no ha podido ser eliminado, intentelo de nuevo y asegurese de que esta entre sus contactos");
+                }
+                    break;
+
+                case "3": 
+                break;
+
+                case "4":
+                System.out.println("Esta es tu lista de contactos: ");
+                agenda.listarContactos();
+            }
+            } while (!opcion.equals("6"));
+        }
+        }
