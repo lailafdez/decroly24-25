@@ -50,11 +50,26 @@ public class ProgramaAgenda {
                     break;
 
                 case "3": 
+                System.out.println("Escribe el nombre del usuario para comprobar si existe o no: ");
+                String comprobarNombre = reader.nextLine();
+                if (agenda.existeContacto(comprobarNombre) == true) {
+                    System.out.println("Este contacto si existe ");
+                }
+                else {
+                    System.out.println("No hemos podido encontarr este contacto, intentelo de nuevo y asegurese de que este bien escrito");
+                }
                 break;
 
                 case "4":
                 System.out.println("Esta es tu lista de contactos: ");
                 agenda.listarContactos();
+
+                case "5":
+                System.out.println("Escribe el nombre de tu contacto: ");
+                String buscarNombre = reader.nextLine();
+                if (agenda.buscarContacto(buscarNombre) != 0) {
+                    System.out.println("Este contacto esta en la posicion " + agenda.buscarContacto(buscarNombre));
+                }
             }
             } while (!opcion.equals("6"));
         }
